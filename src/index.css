@@ -1,3 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-black: #121212;
+  --color-dark: #1F1F1F;
+  --color-light: #E0E0E0;
+  --color-green: #39FF7C;
+
+  --font-title: 'Roboto Mono', monospace;
+}
