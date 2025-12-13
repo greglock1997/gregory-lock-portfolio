@@ -12,29 +12,39 @@ function App(): JSX.Element {
         title="Hello, I'm Greg"
         subtitle="I'm a web developer from Leicester, England"  
       />
-      {/* <Work
+      <Work
         title="Professional Work"
         items={[
           {
-            title: 'F1 Exhibition'
+            title: 'F1 Exhibition',
+            image: 'src/assets/images/f1exhibition.png'
           },
           {
-            title: 'Ghost Shell'
+            title: 'Ghost Shell',
+            image: 'src/assets/images/ghostShell.png'
           },
           {
-            title: 'Capital Bop'
+            title: 'Capital Bop',
+            image: 'src/assets/images/capitalbop.png'
           },
           {
-            title: 'Meerkat Media'
+            title: 'Meerkat Media',
+            image: 'src/assets/images/meerkatMedia.png'
           },
           {
-            title: 'Peace Is Loud'
+            title: 'Collective Lens',
+            image: 'src/assets/images/collectiveLens.png'
           },
           {
-            title: 'Artstamp'
+            title: 'Artstamp',
+            image: 'src/assets/images/artstamp.png'
+          },
+          {
+            title: 'Lumiere Durham App',
+            image: 'src/assets/images/lumiereDurhamApp.png'
           }
         ]}
-      /> */}
+      />
     </div>
   )
 }

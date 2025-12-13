@@ -33,12 +33,12 @@ function Navbar(): JSX.Element {
 
     return (
         <>
-            <nav className="fixed hidden md:flex flex-row bg-white w-full border-b-4">
+            <nav className="fixed hidden md:flex flex-row bg-white w-full border-b-4 z-50">
                 {navbarData.map((navbarItem, index): JSX.Element => (
                     <a key={index} className="px-12 py-2 border-r-4 font-semibold text-xl hover:bg-[#F8D6B3] cursor-pointer">{navbarItem.name}</a>
                 ))}
             </nav>
-            <nav className="fixed flex flex-col md:hidden justify-end bg-white w-full border-b-4">
+            <nav className="fixed flex flex-col md:hidden justify-end bg-white w-full border-b-4 z-50">
                 <div className="flex justify-end w-full bg-white p-4">
                     <button className="flex flex-col space-y-2 w-12 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                         <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && 'rotate-45 translate-y-4'}`}/>
