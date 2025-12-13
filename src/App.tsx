@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './components/Hero.tsx';
 import Work from './components/Work.tsx';
 import Navbar from './components/Navbar.tsx';
+import Contact from './components/Contact.tsx';
 
 function App(): JSX.Element {
   return (
@@ -45,6 +46,7 @@ function App(): JSX.Element {
           }
         ]}
       />
+      <Contact/>
     </div>
   )
 }

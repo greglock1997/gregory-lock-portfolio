@@ -8,10 +8,6 @@ interface WorkItemProps {
 }
 
 function WorkItem({ title, link, image, description }: WorkItemProps): JSX.Element {
-  console.log(title);
-  console.log(link);
-  console.log(image);
-
   return (
     <button className="flex flex-col justify-start gap-y-4 md:w-full bg-white border-4 p-4 rounded-2xl overflow-hidden hover:-translate-2 hover:shadow-[8px_8px_0_0_rgba(0,0,0,1)] transition-all duration-300 cursor-pointer group">
       <div className="flex justify-between items-center gap-4">
