@@ -35,7 +35,7 @@ function Navbar(): JSX.Element {
         <>
             <nav className="fixed hidden md:flex flex-row bg-white w-full border-b-4 z-50">
                 {navbarData.map((navbarItem, index): JSX.Element => (
-                    <a key={index} className="px-12 py-2 border-r-4 font-semibold text-xl hover:bg-[#F8D6B3] cursor-pointer">{navbarItem.name}</a>
+                    <a key={index}   className="relative px-12 py-2 first:border-l-0 border-l-4 last:border-r-4 border-black bg-white font-semibold text-xl cursor-pointer transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_black,0px_4px_0_0_black] hover:z-10">{navbarItem.name}</a>
                 ))}
             </nav>
             <nav className="fixed flex flex-col md:hidden justify-end bg-white w-full border-b-4 z-50">

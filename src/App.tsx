@@ -2,14 +2,14 @@ import { type JSX } from 'react';
 import './App.css';
 import Hero from './components/Hero.tsx';
 import Work from './components/Work.tsx';
-import Navbar from './components/navbar.tsx';
+import Navbar from './components/Navbar.tsx';
 
 function App(): JSX.Element {
   return (
     <div className="bg-black h-full px-0">
       <Navbar/>
       <Hero 
-        title="Hello, I'm Greg"
+        title="Hi, I'm Greg"
         subtitle="I'm a web developer from Leicester, England"  
       />
       <Work
