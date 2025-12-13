@@ -20,6 +20,7 @@ function Work({ title, items }: WorkProps): JSX.Element {
       <div className="grid grid-cols-3 gap-8">
         {items?.map((item, index) => (
           <WorkItem
+            key={index}
             title={item.title}
           />
         ))}

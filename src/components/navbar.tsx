@@ -1,15 +1,57 @@
-import { type JSX } from 'react';
+import { type JSX, useState } from 'react';
+
+interface NavbarItem {
+  name: string;
+  link: string;
+}
+
+const navbarData: NavbarItem[] = [
+    {
+        name: 'Home',
+        link: '/'
+    },
+        {
+        name: 'Work',
+        link: '/'
+    },
+        {
+        name: 'Projects',
+        link: '/'
+    },
+    {
+        name: 'Skills',
+        link: '/'
+    },
+    {
+        name: 'Contact',
+        link: '/'
+    }
+];
 
 function Navbar(): JSX.Element {
-  return (
-    <nav className="fixed flex flex-row bg-white w-full border-b-4">
-        <a className="px-12 py-2 border-r-4 font-semibold text-2xl">Home</a>
-        <a className="px-12 py-2 border-r-4 font-bold text-2xl">Professional Work</a>
-        <a className="px-12 py-2 border-r-4 font-bold text-2xl">Personal Projects</a>
-        <a className="px-12 py-2 border-r-4 font-bold text-2xl">Skills</a>
-        <a className="px-12 py-2 border-r-4 font-bold text-2xl">Contact</a>
-    </nav>
-  )
+    const [isOpen, setIsOpen] = useState<Boolean>(false);
+
+    return (
+        <>
+            <nav className="fixed hidden md:flex flex-row bg-white w-full border-b-4">
+                {navbarData.map((navbarItem, index): JSX.Element => (
+                    <a key={index} className="px-12 py-2 border-r-4 font-semibold text-xl hover:bg-[#F8D6B3] cursor-pointer">{navbarItem.name}</a>
+                ))}
+            </nav>
+            <nav className="fixed flex flex-col md:hidden justify-end bg-white w-full border-b-4">
+                <div className="flex justify-end w-full bg-white p-4">
+                    <button className="flex flex-col space-y-2 w-12 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+                        <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && 'rotate-45 translate-y-4'}`}/>
+                        <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && 'rotate-45'}`}/>
+                        <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && '-rotate-45 -translate-y-4'}`}/>
+                    </button>
+                </div>
+                {isOpen && navbarData.map((navbarItem, index): JSX.Element => (
+                    <a key={index} className="w-full bg-white border-t-4 p-4 text-2xl font-semibold" href={navbarItem.link}>{navbarItem.name}</a>
+                ))}
+            </nav>
+        </>
+    )
 }
 
 export default Navbar;

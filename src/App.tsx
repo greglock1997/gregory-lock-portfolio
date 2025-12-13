@@ -12,7 +12,7 @@ function App(): JSX.Element {
         title="Hello, I'm Greg"
         subtitle="I'm a web developer from Leicester, England"  
       />
-      <Work
+      {/* <Work
         title="Professional Work"
         items={[
           {
@@ -34,7 +34,7 @@ function App(): JSX.Element {
             title: 'Artstamp'
           }
         ]}
-      />
+      /> */}
     </div>
   )
 }
