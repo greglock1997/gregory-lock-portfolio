@@ -1,12 +1,13 @@
 import { type JSX } from 'react';
+import SectionHeader from './SectionHeader';
 
 function Experience(): JSX.Element {
   return (
     <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#FFB2EF] px-12">
-      <div className="flex flex-col gap-y-2 md:gap-y-4 bg-white md:max-w-2/3 p-4 md:p-8 border-4 border-black shadow-[12px_12px_0_0_rgba(0,0,0,1)]">
-        <h1 className="text-black font-bold font-title text-3xl md:text-6xl">Experience</h1>
-        <p className="text-black font-bold font-title md:text-xl">Frontend developer with professional experience working across websites, desktop and mobile applications, combining clean UI implementation with close collaboration between designers, clients, and backend developers.</p>
-      </div>
+      <SectionHeader 
+        title="Experience"
+        description="Frontend developer with professional experience working across websites, desktop and mobile applications, combining clean UI implementation with close collaboration between designers, clients, and backend developers."
+      />
       <div className="flex flex-col md:grid grid-cols-3 gap-8 items-start">
         <div className="flex flex-col gap-y-2 md:gap-y-4 bg-white p-4 md:p-8 border-4 border-black rounded-2xl">
           <div className="flex flex-col gap-y-2">
