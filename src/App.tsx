@@ -29,31 +29,38 @@ function App(): JSX.Element {
         items={[
           {
             title: 'F1 Exhibition',
-            image: f1exhibition
+            image: f1exhibition,
+            link: 'https://f1exhibition.com/'
           },
           {
             title: 'Ghost Shell',
-            image: ghostShell
+            image: ghostShell,
+            link: 'https://ghostshellgame.com/'
           },
           {
             title: 'Capital Bop',
-            image: capitalBop
+            image: capitalBop,
+            link: 'https://www.capitalbop.com/'
           },
           {
             title: 'Meerkat Media',
-            image: meerkatMedia
+            image: meerkatMedia,
+            link: 'https://meerkatmedia.org/'
           },
           {
             title: 'Collective Lens',
-            image: collectiveLens
+            image: collectiveLens,
+            link: 'https://peaceisloud.org/collectivelenslibrary/'
           },
           {
             title: 'Artstamp',
-            image: artstamp
+            image: artstamp,
+            link: 'https://artstamp.com/'
           },
           {
             title: 'Lumiere Durham App',
-            image: lumiereDurhamApp
+            image: lumiereDurhamApp,
+            link: 'https://apps.apple.com/gb/app/lumiere-durham/id1478642384'
           }
         ]}
       />
@@ -62,11 +69,13 @@ function App(): JSX.Element {
         items={[
           {
             title: 'iTunes API App (2023)',
-            image: iTunesApp
+            image: iTunesApp,
+            link: 'https://greglock1997.github.io/React-API-App/'
           },
           {
             title: 'Japanese Kanji App (2022)',
-            image: kanjiApp
+            image: kanjiApp,
+            link: 'https://kanji-app.onrender.com/login'
           }
         ]}
       />
