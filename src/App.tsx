@@ -5,6 +5,16 @@ import Work from './components/Work.tsx';
 import Navbar from './components/Navbar.tsx';
 import Contact from './components/Contact.tsx';
 import Projects from './components/Projects.tsx';
+import f1exhibition from '../assets/images/f1exhibition.png';
+import ghostShell from '../assets/images/ghostShell.png';
+import capitalBop from '../assets/images/capitalbop.png';
+import meerkatMedia from '../assets/images/meerkatMedia.png';
+import collectiveLens from '../assets/images/collectiveLens.png';
+import artstamp from '../assets/images/artstamp.png';
+import lumiereDurhamApp from '../assets/images/lumiereDurhamApp.png';
+import iTunesApp from '../assets/images/iTunesApp.png';
+import kanjiApp from '../assets/images/kanjiApp.png';
+
 
 function App(): JSX.Element {
   return (
@@ -19,31 +29,31 @@ function App(): JSX.Element {
         items={[
           {
             title: 'F1 Exhibition',
-            image: 'src/assets/images/f1exhibition.png'
+            image: f1exhibition
           },
           {
             title: 'Ghost Shell',
-            image: 'src/assets/images/ghostShell.png'
+            image: ghostShell
           },
           {
             title: 'Capital Bop',
-            image: 'src/assets/images/capitalbop.png'
+            image: capitalBop
           },
           {
             title: 'Meerkat Media',
-            image: 'src/assets/images/meerkatMedia.png'
+            image: meerkatMedia
           },
           {
             title: 'Collective Lens',
-            image: 'src/assets/images/collectiveLens.png'
+            image: collectiveLens
           },
           {
             title: 'Artstamp',
-            image: 'src/assets/images/artstamp.png'
+            image: artstamp
           },
           {
             title: 'Lumiere Durham App',
-            image: 'src/assets/images/lumiereDurhamApp.png'
+            image: lumiereDurhamApp
           }
         ]}
       />
@@ -52,11 +62,11 @@ function App(): JSX.Element {
         items={[
           {
             title: 'iTunes API App (2023)',
-            image: 'src/assets/images/iTunesApp.png'
+            image: iTunesApp
           },
           {
             title: 'Japanese Kanji App (2022)',
-            image: 'src/assets/images/kanjiApp.png'
+            image: kanjiApp
           }
         ]}
       />
