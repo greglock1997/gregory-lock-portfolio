@@ -5,15 +5,15 @@ import Work from './components/Work.tsx';
 import Navbar from './components/Navbar.tsx';
 import Contact from './components/Contact.tsx';
 import Projects from './components/Projects.tsx';
-import f1exhibition from '../assets/images/f1exhibition.png';
-import ghostShell from '../assets/images/ghostShell.png';
-import capitalBop from '../assets/images/capitalbop.png';
-import meerkatMedia from '../assets/images/meerkatMedia.png';
-import collectiveLens from '../assets/images/collectiveLens.png';
-import artstamp from '../assets/images/artstamp.png';
-import lumiereDurhamApp from '../assets/images/lumiereDurhamApp.png';
-import iTunesApp from '../assets/images/iTunesApp.png';
-import kanjiApp from '../assets/images/kanjiApp.png';
+import f1exhibition from './assets/images/f1exhibition.png';
+import ghostShell from './assets/images/ghostShell.png';
+import capitalBop from './assets/images/capitalbop.png';
+import meerkatMedia from './assets/images/meerkatMedia.png';
+import collectiveLens from './assets/images/collectiveLens.png';
+import artstamp from './assets/images/artstamp.png';
+import lumiereDurhamApp from './assets/images/lumiereDurhamApp.png';
+import iTunesApp from './assets/images/iTunesApp.png';
+import kanjiApp from './assets/images/kanjiApp.png';
 
 
 function App(): JSX.Element {
