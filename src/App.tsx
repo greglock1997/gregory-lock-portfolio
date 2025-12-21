@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.tsx';
 import Contact from './components/Contact.tsx';
 import Projects from './components/Projects.tsx';
 import Experience from './components/Experience.tsx';
+import Skills from './components/Skills.tsx';
 
 import f1exhibition from './assets/images/f1exhibition.png';
 import ghostShell from './assets/images/ghostShell.png';
@@ -27,6 +28,7 @@ function App(): JSX.Element {
         title="Hi, I'm Greg"
         subtitle="I'm a web developer from Leicester, England"  
       />
+      <Experience/>
       <Work
         title="Professional Work"
         items={[
@@ -82,7 +84,7 @@ function App(): JSX.Element {
           }
         ]}
       />
-      <Experience/>
+      <Skills/>
       <Contact/>
     </div>
   )

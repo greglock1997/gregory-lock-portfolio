@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader';
 
 function Experience(): JSX.Element {
   return (
-    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#FFB2EF] px-12">
+    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#90EE90] px-12">
       <SectionHeader 
         title="Experience"
         description="Frontend developer with professional experience working across websites, desktop and mobile applications, combining clean UI implementation with close collaboration between designers, clients, and backend developers."

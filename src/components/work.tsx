@@ -16,7 +16,7 @@ interface WorkProps {
 
 function Work({ title, items }: WorkProps): JSX.Element {
   return (
-    <div className='w-full flex flex-col items-center gap-y-16 py-32 container bg-[#90EE90] px-12'>
+    <div className='w-full flex flex-col items-center gap-y-16 py-32 container bg-[#F4D738] px-12'>
       <SectionHeader
         title={title}
         description="A selection of real-world projects I've worked on, including websites and mobile applications, with a focus on frontend architecture, user experience, and styling."
