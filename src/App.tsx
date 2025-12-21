@@ -4,6 +4,7 @@ import Hero from './components/Hero.tsx';
 import Work from './components/Work.tsx';
 import Navbar from './components/Navbar.tsx';
 import Contact from './components/Contact.tsx';
+import Projects from './components/Projects.tsx';
 
 function App(): JSX.Element {
   return (
@@ -43,6 +44,19 @@ function App(): JSX.Element {
           {
             title: 'Lumiere Durham App',
             image: 'src/assets/images/lumiereDurhamApp.png'
+          }
+        ]}
+      />
+      <Projects
+        title="Personal Projects"
+        items={[
+          {
+            title: 'iTunes API App (2023)',
+            image: 'src/assets/images/iTunesApp.png'
+          },
+          {
+            title: 'Japanese Kanji App (2022)',
+            image: 'src/assets/images/kanjiApp.png'
           }
         ]}
       />
