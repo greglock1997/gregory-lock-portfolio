@@ -38,17 +38,20 @@ function Navbar(): JSX.Element {
                     <a key={index}   className="relative px-12 py-2 first:border-l-0 border-l-4 last:border-r-4 border-black bg-white font-semibold text-xl cursor-pointer transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_black,0px_4px_0_0_black] hover:z-10">{navbarItem.name}</a>
                 ))}
             </nav>
-            <nav className="fixed flex flex-col md:hidden justify-end bg-white w-full border-b-4 z-50">
-                <div className="flex justify-end w-full bg-white p-4">
+            <nav className="fixed flex flex-col md:hidden justify-end bg-white w-full border-b-4 z-50 overflow-hidden transition-all duration-700">
+                <div className="flex justify-between items-center w-full bg-white p-4">
+                    <h1 className="font-bold font-title text-3xl md:text-8xl">My Portfolio</h1>
                     <button className="flex flex-col space-y-2 w-12 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                         <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && 'rotate-45 translate-y-4'}`}/>
                         <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && 'rotate-45'}`}/>
                         <div className={`w-full h-2 bg-black rounded-sm transition-all duration-300 ${isOpen && '-rotate-45 -translate-y-4'}`}/>
                     </button>
                 </div>
-                {isOpen && navbarData.map((navbarItem, index): JSX.Element => (
-                    <a key={index} className="w-full bg-white border-t-4 p-4 text-2xl font-semibold" href={navbarItem.link}>{navbarItem.name}</a>
-                ))}
+                <div className={`flex flex-col transition-all duration-700 ${isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                    {navbarData.map((navbarItem, index): JSX.Element => (
+                        <a key={index} className="w-full bg-white border-t-4 p-4 text-2xl font-semibold" href={navbarItem.link}>{navbarItem.name}</a>
+                    ))}
+                </div>
             </nav>
         </>
     )
