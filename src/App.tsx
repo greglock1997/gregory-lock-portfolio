@@ -1,10 +1,13 @@
 import { type JSX } from 'react';
 import './App.css';
+
 import Hero from './components/Hero.tsx';
 import Work from './components/Work.tsx';
 import Navbar from './components/Navbar.tsx';
 import Contact from './components/Contact.tsx';
 import Projects from './components/Projects.tsx';
+import Experience from './components/Experience.tsx';
+
 import f1exhibition from './assets/images/f1exhibition.png';
 import ghostShell from './assets/images/ghostShell.png';
 import capitalBop from './assets/images/capitalbop.png';
@@ -79,6 +82,7 @@ function App(): JSX.Element {
           }
         ]}
       />
+      <Experience/>
       <Contact/>
     </div>
   )
