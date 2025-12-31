@@ -3,12 +3,12 @@ import SectionHeader from './SectionHeader';
 
 function Skills(): JSX.Element {
   return (
-    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#FFB2EF] px-12" id="skills">
+    <div className="w-full flex flex-col items-center gap-y-16 py-32 bg-[#FFB2EF] px-12" id="skills">
       <SectionHeader 
         title="Skills"
       />
       <div className="flex flex-col md:grid grid-cols-3 gap-8 items-start">
-        <div className="flex flex-col gap-y-2 md:gap-y-8 bg-white p-4 md:p-8 border-4 border-black rounded-2xl">
+        <div className="flex flex-col gap-y-2 md:gap-y-8 bg-white p-4 md:p-8 border-4 border-black rounded-2xl w-full md:w-auto">
           <h1 className="text-black font-bold font-title text-3xl md:text-3xl">Frontend</h1>
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-2">
@@ -68,7 +68,7 @@ function Skills(): JSX.Element {
           </div>
         </div>
 
-        <div className="flex flex-col gap-y-2 md:gap-y-8 bg-white p-4 md:p-8 border-4 border-black rounded-2xl">
+        <div className="flex flex-col gap-y-2 md:gap-y-8 bg-white p-4 md:p-8 border-4 border-black rounded-2xl w-full md:w-auto">
           <h1 className="text-black font-bold font-title text-3xl md:text-3xl">Backend</h1>
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-2">
@@ -92,7 +92,7 @@ function Skills(): JSX.Element {
           </div>
         </div>
 
-        <div className="flex flex-col gap-y-2 md:gap-y-8 bg-white p-4 md:p-8 border-4 border-black rounded-2xl">
+        <div className="flex flex-col gap-y-2 md:gap-y-8 bg-white p-4 md:p-8 border-4 border-black rounded-2xl w-full md:w-auto">
           <h1 className="text-black font-bold font-title text-3xl md:text-3xl">Other</h1>
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-2">
