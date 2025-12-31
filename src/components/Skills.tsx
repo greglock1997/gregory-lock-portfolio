@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader';
 
 function Skills(): JSX.Element {
   return (
-    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#FFB2EF] px-12">
+    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#FFB2EF] px-12" id="skills">
       <SectionHeader 
         title="Skills"
       />

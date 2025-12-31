@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader';
 
 function Contact(): JSX.Element {
   return (
-    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#A388EE] px-12">
+    <div className="w-full flex flex-col items-center gap-y-16 py-32 container bg-[#A388EE] px-12" id='contact'>
       <SectionHeader
         title="Contact"
       />
